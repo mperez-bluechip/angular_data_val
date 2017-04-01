@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
 import {DebugPanelComponent} from '../debug-panel/debug-panel.component';
 
 @Component({
@@ -9,6 +10,14 @@ import {DebugPanelComponent} from '../debug-panel/debug-panel.component';
   moduleId: module.id
 })
 export class OrderSheetComponent {
-  constructor() {
+  orderSheetForm: FormGroup;
+
+  constructor( private formBuilder: FormBuilder) {
+    this.buildForm();
+  }
+  buildForm (){
+    this.orderSheetForm = this.formBuilder.group({
+      
+    }); 
   }
 }

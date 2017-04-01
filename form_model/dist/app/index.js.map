@@ -1,0 +1,1 @@
+{"version":3,"sources":["app/index.ts"],"names":[],"mappings":";AAAA,oCAAgC,uBAAuB,CAAC;AAAhD,oEAAgD","file":"app/index.js","sourcesContent":["export {SandoAppComponent} from './sando-app.component';\n"],"sourceRoot":"/source/"}
