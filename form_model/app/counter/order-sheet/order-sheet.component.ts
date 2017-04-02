@@ -16,12 +16,13 @@ export class OrderSheetComponent {
   constructor( private formBuilder: FormBuilder) {
     this.buildForm();
   }
+
   buildForm (){
     this.orderSheetForm = this.formBuilder.group({
       customerName: this.formBuilder.control(null),
       size: this.formBuilder.control(null),
       bread: this.formBuilder.control(null),
-      specialtySandwich: this.formBuilder.control(null),
+      specialtySandwich: this.formBuilder.control(null),  
       weirdRequests: this.formBuilder.array([
         this.formBuilder.control(null)
       ]),
@@ -48,6 +49,9 @@ export class OrderSheetComponent {
     this.weirdRequestsControls.push(this.formBuilder.control(null));
   }
   onRemoveWeirdRequest(index){
-    this.weirdRequestsControls.removeAt(index);
+    this.weirdRequestsControls.removeAt(index); 
+  }
+  onResetForm(){
+    this.orderSheetForm.reset();
   }
 }
