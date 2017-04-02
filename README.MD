@@ -7,3 +7,5 @@ This is a learning exercise from Lynda.com with Justin Schwartzenberger on Angul
 * Modified order-sheet.components.ts to include buildForm method with customer name
   size, type of bread, type of Sandwich, other order requests, meat types, cheese types, and veggies
 * Mod to order-sheet.components.ts file with a public function to reset the form
+* Mod to order-sheet.components.ts and order-sheet.component.html allowing submit
+  button to be handled with Angular and not the default browser submit
